@@ -86,9 +86,6 @@ const Header = () => {
           <a href="#gallery" onClick={closeMenu}>
             Gallery
           </a>
-          <a href="#contact" onClick={closeMenu}>
-            Contact
-          </a>
 
           <div className="navbar__mobile-contact">
             <p>📍 Davis, CA</p>

@@ -10,7 +10,7 @@ const Hero = () => {
             One-on-one appointments with a certified arborist
           </p>
           <h2 className="hero__title">ARBORIST CONSULTING</h2>
-          <a href="#" className="btn btn--secondary">
+          <a href="tel:5307607450" className="btn btn--secondary">
             CONTACT US
           </a>
         </div>

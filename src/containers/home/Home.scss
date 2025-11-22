@@ -1,197 +1,9 @@
 // File: src/styles/main.scss
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-}
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
-}
-
-// Header
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  //   padding: 1.5rem 0;
-  background: rgba(0, 0, 0, 0.45);
-
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .container,
-  .header__inner {
-    background-color: black;
-  }
-}
-
-.logo {
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  img {
-    height: 80px;
-  }
-
-  &__text {
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-    }
-    p {
-      font-size: 0.9rem;
-      opacity: 0.9;
-    }
-  }
-}
-
-.nav {
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-    align-items: center;
-    font-weight: 600;
-
-    li.dropdown a::after {
-      font-size: 0.7rem;
-      margin-left: 0.3rem;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: opacity 0.3s;
-
-      &.active,
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .btn--primary {
-    background: #a7d869;
-    color: #1a472a;
-    padding: 0.8rem 1.8rem;
-    border-radius: 6px;
-    font-weight: 700;
-    margin-left: 2rem;
-  }
-}
-
-.contact-info {
-  color: white;
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.95rem;
-  align-items: center;
-
-  a {
-    color: white;
-    text-decoration: underline;
-  }
-}
-
-// Hero
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url("https://lirp.cdn-website.com/4fe3df14/dms3rep/multi/opt/shutterstock_2372934735-640w.jpg")
-    center/cover no-repeat;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.6)
-    );
-  }
-
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  &__content {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-  }
-
-  &__subtitle {
-    font-size: 1.3rem;
-    letter-spacing: 0.15em;
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
-
-  &__title {
-    font-size: 5.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 1rem 0 2rem;
-    line-height: 1.1;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  }
-
-  .btn--secondary {
-    background: #a7d869;
-    color: #1a472a;
-    padding: 1rem 3rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: translateY(-3px);
-    }
-  }
-
-  &__arrows {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem;
-    display: flex;
-    gap: 3rem;
-    color: rgba(255, 255, 255, 0.6);
-    z-index: 2;
-  }
 }
 
 // Services Icons Section
@@ -236,17 +48,8 @@ body {
 
 // Responsive
 @media (max-width: 992px) {
-  .header__inner {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
   .nav ul {
     gap: 1.5rem;
-  }
-
-  .hero__title {
-    font-size: 4rem;
   }
 
   .services-icons__grid {
@@ -255,10 +58,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .hero__title {
-    font-size: 3rem;
-  }
-
   .services-icons__grid {
     grid-template-columns: 1fr;
   }
@@ -266,29 +65,5 @@ body {
   .contact-info {
     flex-direction: column;
     gap: 0.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    // z-index: 9;
-  }
-
-  .logo__text {
-    h1 {
-      font-size: 26px;
-    }
-  }
-
-  .hero {
-    height: 80vh;
-  }
-
-  .hero__title {
-    font-size: 30px;
-  }
-
-  .hero__subtitle {
-    font-size: 15px;
   }
 }

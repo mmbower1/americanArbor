@@ -40,6 +40,8 @@ const Home = () => {
       </header>
 
       {/* Hero Section */}
+      <br />
+      <br />
       <section className="hero">
         <div className="hero__overlay">
           <div className="container hero__content">

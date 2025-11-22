@@ -34,11 +34,6 @@ const Header = () => {
           {/* Desktop Menu */}
           <ul className="navbar__menu">
             <li>
-              <a href="#about" onClick={closeMenu}>
-                About
-              </a>
-            </li>
-            <li>
               <a href="#services" onClick={closeMenu}>
                 Services
               </a>
@@ -49,8 +44,8 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={closeMenu}>
-                Contact
+              <a href="#about" onClick={closeMenu}>
+                About
               </a>
             </li>
           </ul>
@@ -77,16 +72,15 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       <div className={`navbar__mobile-overlay ${isOpen ? "open" : ""}`}>
         <div className="navbar__mobile-menu">
-          <a href="#about" onClick={closeMenu}>
-            About
-          </a>
           <a href="#services" onClick={closeMenu}>
             Services
           </a>
           <a href="#gallery" onClick={closeMenu}>
             Gallery
           </a>
-
+          <a href="#about" onClick={closeMenu}>
+            About
+          </a>
           <div className="navbar__mobile-contact">
             <p>📍 Davis, CA</p>
             <p>📞 (530) 760-7450</p>

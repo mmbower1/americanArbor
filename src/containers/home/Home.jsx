@@ -6,13 +6,12 @@ import "./Home.scss";
 // components
 import Header from "../../components/header/Header";
 import Hero from "../../components/hero/Hero";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
     <div className="app">
-      {/* Header */}
       <Header />
-      {/* Hero Section */}
       <br />
       <br />
       <Hero />
@@ -55,6 +54,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

@@ -9,7 +9,6 @@
   align-items: center;
   text-align: center;
   color: white;
-
   h1 {
     font-size: 4.5rem;
     font-weight: 800;
@@ -152,6 +151,8 @@
     font-size: 3.5rem;
   }
   .services-grid {
+    display: block;
+
     grid-template-columns: 1fr;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -25,28 +26,28 @@ const Footer = () => {
           <h3>Services</h3>
           <ul>
             <li>
-              <a href="#">Tree Pruning Trimming</a>
+              <Link to="/services">Tree Pruning Trimming</Link>
             </li>
             <li>
-              <a href="#">Tree Removal</a>
+              <Link to="/services">Tree Removal</Link>
             </li>
             <li>
-              <a href="#">Stump Grinding</a>
+              <Link to="/services">Stump Grinding</Link>
             </li>
             <li>
-              <a href="#">Emergency Storm</a>
+              <Link to="/services">Emergency Storm</Link>
             </li>
             <li>
-              <a href="#">Assessments</a>
+              <Link to="/services">Assessments</Link>
             </li>
             <li>
-              <a href="#">Tree Health </a>
+              <Link to="/services">Tree Health </Link>
             </li>
             <li>
-              <a href="#">Cabling & Bracing</a>
+              <Link to="/services">Cabling & Bracing</Link>
             </li>
             <li>
-              <a href="#">Planting & Transplanting</a>
+              <Link to="/services">Planting & Transplanting</Link>
             </li>
           </ul>
         </div>
@@ -81,14 +82,14 @@ const Footer = () => {
           <h3>About</h3>
           <ul>
             <li>
-              <a href="#">About us</a>
+              <Link to="/about">About us</Link>
             </li>
 
-            <li>
+            {/* <li>
               <a href="#">Certifications</a>
-            </li>
+            </li> */}
             <li>
-              <a href="#">Service Area</a>
+              <Link to="/service-area">Service Area</Link>
             </li>
           </ul>
 

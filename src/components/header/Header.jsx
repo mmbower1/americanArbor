@@ -1,5 +1,6 @@
 // /src/components/Navbar.tsx
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 const Header = () => {
@@ -34,19 +35,19 @@ const Header = () => {
           {/* Desktop Menu */}
           <ul className="navbar__menu">
             <li>
-              <a href="#services" onClick={closeMenu}>
+              <Link to="/services" onClick={closeMenu}>
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#gallery" onClick={closeMenu}>
+              <Link href="/gallery" onClick={closeMenu}>
                 Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" onClick={closeMenu}>
+              <Link to="/about" onClick={closeMenu}>
                 About
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -72,15 +73,15 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       <div className={`navbar__mobile-overlay ${isOpen ? "open" : ""}`}>
         <div className="navbar__mobile-menu">
-          <a href="#services" onClick={closeMenu}>
+          <Link to="/services" onClick={closeMenu}>
             Services
-          </a>
-          <a href="#gallery" onClick={closeMenu}>
+          </Link>
+          <Link to="/gallery" onClick={closeMenu}>
             Gallery
-          </a>
-          <a href="#about" onClick={closeMenu}>
+          </Link>
+          <Link to="/about" onClick={closeMenu}>
             About
-          </a>
+          </Link>
           <div className="navbar__mobile-contact">
             <p>📍 Davis, CA</p>
             <p>📞 (530) 760-7450</p>

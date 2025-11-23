@@ -106,7 +106,7 @@
 // Responsive
 @media (max-width: 992px) {
   .footer__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 0fr;
     gap: 3rem 2rem;
   }
 

@@ -4,14 +4,11 @@ import "./Home.scss";
 // import logo from "./assets/logo.png"; // place logo in src/assets/logo.png
 
 // components
-import Header from "../../components/header/Header";
 import Hero from "../../components/hero/Hero";
-import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
     <div className="app">
-      <Header />
       <br />
       <br />
       <Hero />
@@ -54,7 +51,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

@@ -72,12 +72,12 @@
   h3 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: #0f2b1a;
+    // color: #0f2b1a;
   }
 
   p {
     line-height: 1.7;
-    color: #444;
+    // color: #444;
     margin-bottom: 1.5rem;
   }
 }
@@ -92,7 +92,7 @@
     color: #555;
 
     &::before {
-      content: "Checkmark";
+      content: "✔";
       position: absolute;
       left: 0;
       color: #a7d869;

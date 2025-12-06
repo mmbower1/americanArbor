@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.scss";
-// import mikePhoto from "../assets/mike-portrait.jpg";
+import ISA from "../../assets/ISA-cert.png";
+import signature from "../../assets/Signature.png";
+
 // import matthewPhoto from "../assets/matthew-old.jpg";
 
 const About = () => {
@@ -22,7 +24,7 @@ const About = () => {
           <div className="story-grid">
             {/* Mike’s Portrait */}
             <div className="story-image">
-              <img alt="Mike — Owner & Lead Arborist" />
+              <img src={ISA} alt="Mike — Owner & Lead Arborist" />
               <div className="caption">
                 Mike – ISA Certified Arborist #WE-12345A
               </div>
@@ -36,10 +38,10 @@ const About = () => {
                 professionally since I was 15 years old.
               </p>
               <p>
-                Dad started American Arbor in 1980's with one truck, a chainsaw,
-                and a belief that trees deserve respect. I grew up watching him
-                save century-old oaks others wanted to cut down, and that work
-                ethic stuck with me.
+                My father started American Arbor in 1980's with one truck, a
+                chainsaw, and a belief that trees deserve respect. I grew up
+                watching him save century-old oaks others wanted to cut down,
+                and that work ethic stuck with me.
               </p>
               <p>
                 In 2018, after earning my ISA Certified Arborist credential and
@@ -57,8 +59,8 @@ const About = () => {
 
               <div className="signature">
                 <img
-                  src="/signature.png"
-                  alt="Mike's signature"
+                  src={signature}
+                  alt="signature"
                   className="signature-img"
                 />
                 <p>

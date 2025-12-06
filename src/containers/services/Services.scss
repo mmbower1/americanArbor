@@ -1,6 +1,6 @@
 .services-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
-    url("https://images.unsplash.com/photo-1587939194448-d304e4c4e8df?q=80&w=2940&auto=format&fit=crop");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2940&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
   height: 55vh;
@@ -40,7 +40,9 @@
 }
 
 .service-card {
-  background: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2940&auto=format&fit=crop");
+  background-size: cover;
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -89,7 +91,7 @@
     padding-left: 1.8rem;
     position: relative;
     margin-bottom: 0.6rem;
-    color: #555;
+    color: gray;
 
     &::before {
       content: "✔";
